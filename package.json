@@ -1,0 +1,19 @@
+{
+  "name": "koa-ts-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-router": "^7.0.23",
+    "@types/node": "^8.0.50",
+    "@types/nunjucks": "^3.0.0",
+    "@types/react": "^16.0.20",
+    "@types/react-dom": "^16.0.2",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "nunjucks": "^3.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

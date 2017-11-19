@@ -1,0 +1,1 @@
+# Node.js rendering test (React, Nunjucks, ES6)
