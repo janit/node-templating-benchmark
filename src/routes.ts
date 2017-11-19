@@ -1,6 +1,7 @@
 import reactController from './controllers/react';
 import es6Controller from './controllers/es6';
 import nunjucksController from './controllers/nunjucks';
+import pugController from './controllers/pug';
 
 export const AppRoutes: [Route] = [
     {
@@ -17,6 +18,11 @@ export const AppRoutes: [Route] = [
         path: '/nunjucks',
         method: 'get',
         action: nunjucksController
+    },
+    {
+        path: '/pug',
+        method: 'get',
+        action: pugController
     }
 ]
 
