@@ -2,8 +2,7 @@ import { Context } from "koa";
 import { employees } from '../data/employees';
 import * as Nunjucks from 'nunjucks';
 
-const compiledTemplate = Nunjucks.compile(`
-
+const template = `
 <div>
 <table>
 <tbody>
@@ -24,9 +23,15 @@ const compiledTemplate = Nunjucks.compile(`
 </tbody>
 </table>
 </div>
+`;
 
-`);
+const compiledTemplate = Nunjucks.compile(template);
 
 export default async (context: Context) => {
-    context.body = compiledTemplate.render({employees: employees})
+
+    if(typeof context.request.query.nocompile == 'undefined'){
+        context.body = Nunjucks.renderString(template,{employees: employees})
+    } else {
+        context.body = compiledTemplate.render({employees: employees})
+    }
 }
