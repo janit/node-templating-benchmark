@@ -13,6 +13,8 @@
     "@types/react-dom": "^16.0.2",
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
+    "mithril": "1.1.5",
+    "mithril-node-render": "2.3.0",
     "nunjucks": "^3.0.1",
     "pug": "^2.0.0-rc.4",
     "react": "^16.0.0",
