@@ -3,6 +3,7 @@ import es6Controller from './controllers/es6';
 import nunjucksController from './controllers/nunjucks';
 import pugController from './controllers/pug';
 import mithrilController from './controllers/mithril';
+import vueController from './controllers/vue';
 
 export const AppRoutes: [Route] = [
     {
@@ -29,6 +30,11 @@ export const AppRoutes: [Route] = [
         path: '/mithril',
         method: 'get',
         action: mithrilController
+    },
+    {
+        path: '/vue',
+        method: 'get',
+        action: vueController
     }
 ]
 
