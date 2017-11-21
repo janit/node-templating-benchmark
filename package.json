@@ -18,6 +18,8 @@
     "nunjucks": "^3.0.1",
     "pug": "^2.0.0-rc.4",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "preact": "^8.2.6",
+    "preact-render-to-string": "^3.7.0"
   }
 }

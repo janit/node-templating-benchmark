@@ -3,6 +3,7 @@ import es6Controller from './controllers/es6';
 import nunjucksController from './controllers/nunjucks';
 import pugController from './controllers/pug';
 import mithrilController from './controllers/mithril';
+import preactController from './controllers/preact';
 
 export const AppRoutes: [Route] = [
     {
@@ -29,6 +30,11 @@ export const AppRoutes: [Route] = [
         path: '/mithril',
         method: 'get',
         action: mithrilController
+    },
+    {
+        path: '/preact',
+        method: 'get',
+        action: preactController
     }
 ]
 
